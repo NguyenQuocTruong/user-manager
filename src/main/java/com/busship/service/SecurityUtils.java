@@ -1,5 +1,6 @@
-package com.busship.security;
+package com.busship.service;
 
+import com.busship.constant.AuthoritiesConstants;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContext;

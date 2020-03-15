@@ -1,12 +1,11 @@
 package com.busship.service;
 
-import com.busship.config.Constants;
+import com.busship.constant.AuthoritiesConstants;
+import com.busship.constant.Constants;
 import com.busship.domain.Authority;
 import com.busship.domain.User;
 import com.busship.repository.AuthorityRepository;
 import com.busship.repository.UserRepository;
-import com.busship.security.AuthoritiesConstants;
-import com.busship.security.SecurityUtils;
 import com.busship.service.dto.UserDTO;
 import io.github.jhipster.security.RandomUtil;
 import org.slf4j.Logger;
@@ -149,10 +148,10 @@ public class UserService {
         user.setActivated(true);
         if (userDTO.getAuthorities() != null) {
             Set<Authority> authorities = userDTO.getAuthorities().stream()
-                .map(authorityRepository::findById)
-                .filter(Optional::isPresent)
-                .map(Optional::get)
-                .collect(Collectors.toSet());
+                    .map(authorityRepository::findById)
+                    .filter(Optional::isPresent)
+                    .map(Optional::get)
+                    .collect(Collectors.toSet());
             user.setAuthorities(authorities);
         }
         userRepository.save(user);

@@ -1,8 +1,8 @@
 package com.busship.service.dto;
 
-import com.busship.domain.User;
-import com.busship.config.Constants;
+import com.busship.constant.Constants;
 import com.busship.domain.Authority;
+import com.busship.domain.User;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;

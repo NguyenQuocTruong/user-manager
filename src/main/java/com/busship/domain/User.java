@@ -1,8 +1,8 @@
 package com.busship.domain;
 
+import com.busship.constant.Constants;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.busship.config.Constants;
-import org.apache.commons.lang3.StringUtils;
+import net.logstash.logback.encoder.org.apache.commons.lang3.StringUtils;
 import org.hibernate.annotations.BatchSize;
 
 import javax.persistence.*;
@@ -20,7 +20,7 @@ import java.util.Set;
  * A user.
  */
 @Entity
-@Table(name = "jhi_user")
+@Table(name = "user")
 public class User extends AbstractAuditingEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;

@@ -1,4 +1,4 @@
-package com.busship.security;
+package com.busship.constant;
 
 /**
  * Constants for Spring Security authorities.

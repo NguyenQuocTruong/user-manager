@@ -1,9 +1,8 @@
 package com.busship.repository;
 
-import com.busship.config.Constants;
 import com.busship.config.audit.AuditEventConverter;
+import com.busship.constant.Constants;
 import com.busship.domain.PersistentAuditEvent;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.actuate.audit.AuditEvent;

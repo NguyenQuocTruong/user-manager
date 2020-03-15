@@ -1,8 +1,5 @@
 package com.busship.rest;
 
-//import com.mycompany.myapp.service.CustomerService;
-//import com.mycompany.myapp.service.dto.CustomerDTO;
-//import com.mycompany.myapp.web.rest.errors.BadRequestAlertException;
 import com.busship.rest.errors.BadRequestAlertException;
 import com.busship.service.CustomerService;
 import com.busship.service.dto.CustomerDTO;
@@ -25,7 +22,7 @@ import java.util.Optional;
  */
 @RestController
 @RequestMapping("/api")
-public class CustomerResource {
+    public class CustomerResource {
 
     private final Logger log = LoggerFactory.getLogger(CustomerResource.class);
 

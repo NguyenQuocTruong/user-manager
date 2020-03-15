@@ -1,4 +1,4 @@
-package com.busship.config;
+package com.busship.constant;
 
 /**
  * Application constants.
